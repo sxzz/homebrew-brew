@@ -1,16 +1,14 @@
-class ComposerAT11022 < Formula
+class ComposerAT1 < Formula
   desc "Dependency Manager for PHP"
   homepage "https://getcomposer.org/"
-  url "https://getcomposer.org/download/1.10.22/composer.phar"
-  sha256 "6127ae192d3b56cd6758c7c72fe2ac6868ecc835dae1451a004aca10ab1e0700"
+  url "https://getcomposer.org/download/1.10.23/composer.phar"
+  sha256 "2fc3ae370a979602a3bc2c950a38db02e51b4ca2072f7b8e15a518b443b835e7"
   license "MIT"
 
   livecheck do
     url "https://github.com/composer/composer.git"
     regex(/^[\d.]+$/i)
   end
-
-  bottle :unneeded
 
   def install
     bin.install "composer.phar" => "composer"
