@@ -1,4 +1,4 @@
-# Sxzz Brew
+# homebrew-brew
 
 ## How do I install these formulae?
 
@@ -6,6 +6,6 @@
 
 Or `brew tap sxzz/brew` and then `brew install <formula>`.
 
-## Documentation
+## Formulae
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+- [composer@1](Formula/composer@1.rb)
