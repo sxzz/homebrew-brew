@@ -2,10 +2,8 @@ class MongodbCommunityAT42 < Formula
   desc "High-performance, schema-free, document-oriented database"
   homepage "https://www.mongodb.com/"
 
-  # frozen_string_literal: true
-
-  url "https://fastdl.mongodb.org/osx/mongodb-macos-x86_64-4.2.24.tgz"
-  sha256 "15047907fd43362edc721b53a8db56484b6420024fade8d7ada8cb0d4dae767c"
+  url "https://fastdl.mongodb.org/osx/mongodb-macos-x86_64-4.2.25.tgz"
+  sha256 "1ee0cc13757b433b2a5b41265001e179f19a3cda4c38e06031792c24022831a0"
 
   option "with-enable-test-commands", "Configures MongoDB to allow test commands such as failpoints"
 
