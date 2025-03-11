@@ -25,6 +25,6 @@ class Tsgo < Formula
   end
 
   test do
-    system "#{bin}/tsgo", "-h"
+    system bin/"tsgo", "-h"
   end
 end
