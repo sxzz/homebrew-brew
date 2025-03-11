@@ -10,17 +10,25 @@ class Tsgo < Formula
   end
 
   on_macos do
-    on_arm do
-      url "https://github.com/sxzz/tsgo-releases/releases/latest/download/tsgo-macos-arm64.tar.gz"
+    if Hardware::CPU.arm?
+      url "https://github.com/sxzz/tsgo-releases/releases/latest/download/tsgo-darwin-arm64.tar.gz"
     end
-    on_intel do
-      url "https://github.com/sxzz/tsgo-releases/releases/latest/download/tsgo-macos-amd64.tar.gz"
+    if Hardware::CPU.intel?
+      url "https://github.com/sxzz/tsgo-releases/releases/latest/download/tsgo-darwin-amd64.tar.gz"
     end
   end
 
   on_linux do
-    on_intel do
-      url "https://github.com/sxzz/tsgo-releases/releases/latest/download/tsgo-linux-amd64.tar.gz"
+    if Hardware::CPU.intel?
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/sxzz/tsgo-releases/releases/latest/download/tsgo-linux-amd64.tar.gz"
+      end
+    end
+
+    if Hardware::CPU.arm?
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/sxzz/tsgo-releases/releases/latest/download/tsgo-linux-arm64.tar.gz"
+      end
     end
   end
 
