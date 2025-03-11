@@ -12,18 +12,15 @@ class Tsgo < Formula
   on_macos do
     on_arm do
       url "https://github.com/sxzz/tsgo-releases/releases/latest/download/tsgo-macos-arm64.tar.gz"
-      sha256 :no_check
     end
     on_intel do
       url "https://github.com/sxzz/tsgo-releases/releases/latest/download/tsgo-macos-amd64.tar.gz"
-      sha256 :no_check
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/sxzz/tsgo-releases/releases/latest/download/tsgo-linux-amd64.tar.gz"
-      sha256 :no_check
     end
   end
 
