@@ -5,7 +5,7 @@ class Tsgo < Formula
 
   livecheck do
     url "https://github.com/sxzz/tsgo-releases/releases/latest"
-    regex(/^build-(\d{4}-\d{2}-\d{2})$/i)
+    regex(/^(\d{4}-\d{2}-\d{2})$/i)
     strategy :github_latest
   end
 
